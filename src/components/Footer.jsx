@@ -4,8 +4,16 @@ export function Footer(props){
     return(
         <>
         <View>
-            <Text>Footer {props.text}</Text>
+            <Text style ={Styles.text}>Footer {props.text}</Text>
         </View>
         </>
     )
 }
+const Styles = StyleSheet.create({
+    text:{
+        color:'#000000',
+        fontSize:18,
+        fontWeight:'bold',
+        fontStyle:'italic'
+      }
+})
