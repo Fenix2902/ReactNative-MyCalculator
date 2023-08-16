@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { Banner } from "./src/components/Banner";
+import { Footer } from "./src/components/Footer";
 
 export default function App() {
+  let mymess = 'Se implementa correo, telefono'
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View>
+        <Text>My First Calculator</Text>
+        <Banner title = 'Banner' subtitle = 'Imagen'/>
+        <Footer text ={mymess}/>
+      </View>
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
@@ -13,8 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
