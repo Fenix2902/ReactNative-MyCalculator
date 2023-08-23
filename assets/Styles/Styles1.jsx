@@ -13,6 +13,13 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     fontStyle: "italic",
   },
+
+  tinputs: {
+    padding: 5,
+    textAlign: "center",
+    backgroundColor: "white",
+    borderRadius: 10,
+  },
 });
 
 export const myimage = StyleSheet.create({

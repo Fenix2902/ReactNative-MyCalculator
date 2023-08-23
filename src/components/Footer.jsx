@@ -3,9 +3,7 @@ import { StyleSheet,Text,View } from "react-native";
 export function Footer(props){
     return(
         <>
-        <View>
             <Text style ={Styles.text}>Footer {props.text}</Text>
-        </View>
         </>
     )
 }
