@@ -1,0 +1,5 @@
+https://reactnativepaper.com //Documentación de react native paper
+https://pictogrammers.com/library/md //Pagina para sacar iconos para el diseño
+
+npx expo start                          // Inicio de servidor
+npm install react-native-paper --force  //instalacion de react-native-paper
