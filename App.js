@@ -35,6 +35,12 @@ export default function App() {
       case "/":
         mresult = mvalue1 / mvalue2;
         break;
+      case "^":
+        mresult = mvalue1 ** mvalue2;
+        break;
+      case "√":
+        mresult = Math.pow(mvalue1, 1 /mvalue2) || Math.sqrt(value1);
+        break;
     }
     setResult(mresult); //actualizando la vble de estado result
   };
@@ -90,6 +96,22 @@ export default function App() {
             onPress={() => calculate("/")}
           >
             División
+          </Button>
+        </View>
+        <View style={{ flexDirection: "row", marginTop: 15 }}>
+          <Button
+            icon=""
+            mode="contained"
+            onPress={() => calculate("^")}
+          >
+            Potenciacion
+          </Button>
+          <Button
+            icon=""
+            mode="contained"
+            onPress={() => calculate("√")}
+          >
+            Raiz
           </Button>
         </View>
         <View style={{ flexDirection: "row", marginTop: 15 }}>
